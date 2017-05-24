@@ -1,0 +1,169 @@
+extends _template.pug
+
+block content
+  section.alert
+    .green
+      p
+        | Hi Lee, you have 
+        a(href='#') 3 new pages
+        |  and 
+        a(href='#') 16 comments
+        |  to approve, better get going!
+      span.close ✖
+  section.content
+    section.widget
+      header
+        span.icon 
+        hgroup
+          h1 Website Statistics
+          h2 An insiders view
+        aside
+          button.left-btn 
+          button.right-btn 
+      .content.cycle
+        #flot-example-2.graph-area
+        #flot-example-1.graph-area
+    .widget-container
+      section.widget.small
+        header
+          span.icon 
+          hgroup
+            h1 Latest comments
+            h2 What they're saying
+          aside
+            span
+              a(href='#') ⚙
+              ul.settings-dd
+                li
+                  label Option a
+                  input(type='checkbox')
+                li
+                  label Option b
+                  input(type='checkbox', checked='checked')
+                li
+                  label Option c
+                  input(type='checkbox')
+        .content.no-padding.timeline
+          .tl-post.comments
+            span.icon 
+            p
+              a(href='#') John Doe says:
+              |  Lorem ipsum dolor sit amet, consecteteur adipiscing elit sed diam nonummy.
+              span.reply
+                input(type='text', value='Respond to comment...')
+          .tl-post.comments
+            span.icon 
+            p
+              a(href='#') John Doe says:
+              |  Lorem ipsum dolor sit amet, consecteteur adipiscing elit sed diam nonummy.
+              span.reply
+                input(type='text', value='Respond to comment...')
+          span.show-more
+            a(href='#') More
+      section.widget.small
+        header
+          span.icon 
+          hgroup
+            h1 Quick Post
+            h2 Speed things up
+          aside
+            span
+              a(href='#') ⚙
+              ul.settings-dd
+                li
+                  label Option a
+                  input(type='checkbox')
+                li
+                  label Option b
+                  input(type='checkbox', checked='checked')
+                li
+                  label Option c
+                  input(type='checkbox')
+        .content
+          .field-wrap
+            input(type='text', value='Title')
+          .field-wrap
+            textarea#quick_post(rows='5')
+          button.green(type='submit') Post
+          button(type='submit') Preview
+    .widget-container
+      section.widget.small
+        header
+          span.icon 
+          hgroup
+            h1 Website figures
+            h2 Facts & figures
+          aside
+            span
+              a(href='#') ⚙
+              ul.settings-dd
+                li
+                  label Option a
+                  input(type='checkbox')
+                li
+                  label Option b
+                  input(type='checkbox', checked='checked')
+                li
+                  label Option c
+                  input(type='checkbox')
+        .content
+          section.stats-wrapper
+            .stats
+              p
+                span 64
+              p Pages
+            .stats
+              p
+                span 362
+              p Comments
+          section.stats-wrapper
+            .stats
+              p
+                span 7
+              p Users
+            .stats
+              p
+                span 927
+              p Assets
+      section.widget.small
+        header
+          span.icon 
+          hgroup
+            h1 Timeline
+            h2 Insiders news
+          aside
+            span
+              a(href='#') ⚙
+              ul.settings-dd
+                li
+                  label Option a
+                  input(type='checkbox')
+                li
+                  label Option b
+                  input(type='checkbox', checked='checked')
+                li
+                  label Option c
+                  input(type='checkbox')
+        .content.no-padding.timeline
+          .tl-post
+            span.icon 
+            p
+              a(href='#') John Doe
+              |  attached an image to a blog post.
+          .tl-post
+            span.icon 
+            p
+              a(href='#') John Doe
+              |  added his location.
+          .tl-post
+            span.icon 
+            p
+              a(href='#') John Doe
+              |  edited his profile.
+          .tl-post
+            span.icon ✉
+            p
+              a(href='#') John Doe
+              |  has sent you  private message.
+          .pie.graph-area
+  
