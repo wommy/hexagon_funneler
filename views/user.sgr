@@ -1,0 +1,24 @@
+extends(src='layout.sgr')
+  block(name='content')
+    div
+      p dashboard
+      div
+        p
+          span user inputs -
+          button update
+        p
+          span paypal/stripe
+          input(type='text' placeholder='')
+        p
+          span email
+          input(type='text' placeholder='tom@technomad.media')
+        p
+          span phone
+          input(type='text' placeholder='312 818 9011')
+      div
+        p
+          span product list -
+          button(href='/product_new') add new product
+          p: a(href='/product_3') product 3
+          p: a(href='/product_2') product 2
+          p: a(href='/product_1') product 1

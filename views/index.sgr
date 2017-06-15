@@ -1,0 +1,4 @@
+extends(src='layout.sgr')
+  block(name='content')
+    div
+      p: a(href='/login') login plz

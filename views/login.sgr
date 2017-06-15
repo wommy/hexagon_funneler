@@ -1,0 +1,13 @@
+extends(src='layout.sgr')
+  block(name='content')
+    div.fb.ai-c.jc-c
+      p
+        span username:
+        input(type='text')
+      p
+        span password:
+        input(type='password')
+      p
+        a(href='/user'): button login
+      p
+        a(href='/user'): button create account
